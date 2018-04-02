@@ -1,0 +1,26 @@
+div{
+    background-color: grey;
+}
+.centered{
+    text-align: center;
+}
+
+#title{
+    font-size: 30pt;
+}
+
+#subtitle{
+    font-size: 15pt;
+}
+
+#content{
+    text-decoration: underline;
+}
+
+.monospaced{
+    font-family: monospace;
+}
+
+li{
+    list-style: none;
+}
