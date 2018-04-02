@@ -1,0 +1,29 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.main{
+    margin:20px;
+}
+
+.text{
+    width: 100%;
+}
+
+img{
+    height: 150px;
+}
+
+.centertext{
+    text-align: center;
+}
+
+.col{
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 2px dashed black;
+}
