@@ -1,6 +1,11 @@
 .pinkdiv {
+    background-color: pink;
+    font-size: 5pt;
 }
 .purple {
+    background-color: purple;
+    font-size: 5pt;
 }
 .big {
+    font-size: 40px;
 }
