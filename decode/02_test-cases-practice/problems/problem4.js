@@ -3,12 +3,24 @@ var assert = require('assert');
 // we need 8 test cases. I've provided the first 2
 let inputs = [
   ["hello", 4],
-  ["", 2]
+  ["hi", 1],
+  ["function", 7],
+  ["this", 0],
+  ["string", 4],
+  ["", 9],
+  ["letter", 3],
+  ["example", 5],
 ]
 
 let outputs = [
   "o",
-  undefined
+  "i",
+  "n",
+  "t",
+  "n",
+  undefined,
+  "t",
+  "l"
 ]
 
 /*
@@ -20,14 +32,15 @@ f(["", 4]); // undefined
 f(["abc", 0]); // a
 
 */
-function f(arr) {
-    
+function f(arr, id) {
+    return arr[id];
 }
 
 function runTest(i) {
     var expected = outputs[i];
     var input = inputs[i];
     var actual = f(input[0], input[1]);
+    //console.log("actual: ", actual, "expected: ", expected)
     assert.deepEqual(actual, expected);
 }
 
