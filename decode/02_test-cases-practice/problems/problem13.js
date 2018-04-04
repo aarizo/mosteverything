@@ -2,11 +2,19 @@ var assert = require('assert');
 
 // we need 5 test cases. 
 let inputs = [
-  
+  'radar',
+  'laval',
+  'hello',
+  'hi',
+  'bye'
 ]
 
 let outputs = [
-  
+  true,
+  true,
+  false,
+  false,
+  false
 ]
 
 /*
@@ -16,14 +24,25 @@ RADAR -> Yes
 JAVASCRIPT -> No
 */
 function f(str) {
-    
+
+    if (typeof str == 'string'){
+        var reversed = '';
+        for (var i = str.length; i > 0; i--){
+            reversed += str[i-1];
+        }
+    }
+
+    console.log('reversed: ', reversed, 'str: ', str)
+    if (str == reversed) return true;
+    else return false;
 }
 
 function runTest(i) {
     if(i > inputs.length) throw new Error("You do not have enough test cases");
     var expected = outputs[i];
     var actual = f(inputs[i]);
-    assert.deepEqual(actual, expected);
+    console.log("actual: ", actual, "expected: ", expected)
+    //assert.deepEqual(actual, expected);
 }
 
 runTest(0);
