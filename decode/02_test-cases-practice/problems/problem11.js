@@ -2,7 +2,11 @@ var assert = require('assert');
 
 // we need 5 test cases. 
 let inputs = [
-  
+  [1,4],
+  [1,7],
+  [4,'o'],
+  [],
+  [6,3]
 ]
 
 let outputs = [
