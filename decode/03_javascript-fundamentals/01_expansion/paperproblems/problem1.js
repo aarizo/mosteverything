@@ -1,4 +1,5 @@
 function square(x) {
+    console.log('x; ', x)
     return x * x;
 }
 
@@ -19,10 +20,23 @@ function reverseString(str) {
 }
 // Expand each of the following and get the result of the expression
 // #1
-square(decrement(square(decrement(3))))
+var z = decrement(3)
+var y = square(z);
+var x = decrement(y);
+var w = square(x);
+
 // #2
-decrement(decrement(square(square(3))))
+var a = square(3);
+var b = square(a);
+var c = decrement(b);
+var d = decrement(c)
+
 // #3
-duplicateString(reverseString("hello"))
+var r = reverseString("hello");
+var s = duplicateString(r)
+
 // #4
-reverseString(duplicateString(duplicateString("foo")))
+var o = duplicateString("foo");
+var p = duplicateString(o);
+var q = reverseString(p)
+
