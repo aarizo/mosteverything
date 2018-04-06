@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var f = require('../src/problem1.js');
 
 var fs = require('fs')
-var source = fs.readFileSync(__dirname + '/problem1.js').toString();
+var source = fs.readFileSync(__dirname + '/../src/problem1.js').toString();
 source = source.replace(/\s/g, "")
 console.log(source);
 
